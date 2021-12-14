@@ -31,9 +31,9 @@ app.get("/tweets", (req, res) => {
     },
     function (err, data, response) {
       //console.log(data);
-      data.statuses.map((tweet) => {
-        tweet.text = emojis.html(tweet.text);
-      });
+      // data.statuses.map((tweet) => {
+      //   tweet.text = emojis.unicode(tweet.text);
+      // });
       res.json(data);
     }
   );

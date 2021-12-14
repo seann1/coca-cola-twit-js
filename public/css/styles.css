@@ -7836,7 +7836,6 @@ a {
 .tweet_text {
   color: white;
   font-size: 4.5em;
-  font-weight: bold;
   padding-top: 100px;
   padding-bottom: 10px;
   padding-right: 100px;
@@ -7851,7 +7850,6 @@ a {
 .small_tweet_text {
   color: white;
   font-size: 4em;
-  font-weight: bold;
   padding-top: 100px;
   padding-bottom: 10px;
   padding-right: 100px;
@@ -7865,7 +7863,6 @@ a {
 .large_tweet_text {
   color: white;
   font-size: 5.5em;
-  font-weight: bold;
   padding-top: 80px;
   padding-bottom: 10px;
   padding-right: 100px;
