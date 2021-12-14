@@ -11,6 +11,9 @@
     "dev": "nodemon . & npm run scss",
     "scss": "sass --watch public/scss:public/css"
   },
+  "engines": {
+    "node": "^14.15.5"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

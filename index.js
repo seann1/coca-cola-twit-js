@@ -4,7 +4,7 @@ const Dotenv = require("dotenv");
 const emojis = require("emojis");
 Dotenv.config();
 const app = Express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const apikey = process.env.CONSUMER_KEY;
 const apiSecretKey = process.env.CONSUMER_SECRET;
