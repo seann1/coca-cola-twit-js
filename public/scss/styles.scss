@@ -1,0 +1,216 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "Coke";
+  src: url("../fonts/brimborion.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "coca-cola";
+  src: url("../fonts/loki-cola.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tweet_text_outer {
+  background-image: url("../images/coke-stripe.svg");
+  // background-color: yellow;
+  background-size: 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.tweet_text {
+  color: white;
+  font-size: 4.5em;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  padding-left: 140px;
+  font-family: "Coke";
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 100;
+  opacity: 100;
+  line-height: 115%;
+}
+
+.small_tweet_text {
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  padding-left: 140px;
+  font-family: "Coke";
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 100;
+  line-height: 115%;
+}
+
+.large_tweet_text {
+  color: white;
+  font-size: 5.5em;
+  font-weight: bold;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  padding-left: 140px;
+  font-family: "Coke";
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 100;
+  line-height: 115%;
+}
+
+.no-font {
+  font-family: Serif;
+  position: relative;
+  top: 7px;
+}
+
+.no-font-hash {
+  font-family: Serif;
+  font-size: 1.5em;
+  position: relative;
+  top: 8px;
+}
+
+.no-font-cocacola {
+  font-family: Serif;
+  font-size: 1.7em;
+  position: relative;
+  top: 7px;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.coca-cola-logo {
+  font-family: "coca-cola";
+  font-size: 1.5em;
+  position: relative;
+  top: 9px;
+  margin-bottom: -15px;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  display: inline;
+  position: relative;
+}
+
+.hashtag {
+  color: white;
+}
+
+.hashtag:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.hashtag:visited {
+  color: white !important;
+  text-decoration: none !important;
+}
+.no-rotate {
+  transform: rotateY(0deg);
+}
+
+.hash-div {
+  margin: 15px;
+  width: 100px;
+  height: 20px;
+}
+
+.nostyle {
+  color: white;
+  text-decoration: none !important;
+}
+
+.smalltext {
+  font-size: 0.5em;
+}
+
+.nostyle:hover {
+  color: white;
+  text-decoration: none !important;
+}
+
+.nostyle:visited {
+  color: white;
+  text-decoration: none !important;
+}
+
+.bubble {
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+}
+
+.user-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 70px;
+  width: 220px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 5;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.description-container {
+  width: 220px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 5;
+  margin: 10px;
+  display: flex;
+}
+
+.user-photo img {
+  height: 70px;
+  padding: 0.2rem;
+  // position: relative;
+  // float: left;
+  // left: 20px;
+  // top: 5px;
+}
+
+.user-info {
+  // position: relative;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+  // float: left;
+  // left: 70px;
+  // bottom: -3px;
+}
+
+.user-description {
+  font-size: 0.8rem;
+  color: black;
+  text-shadow: 2px 2px 5px #fff;
+}

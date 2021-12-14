@@ -1,0 +1,35 @@
+{
+  "name": "express-twitter-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch-app": "nodemon .",
+    "watch-css": "node-sass -w public/scss -o public/css",
+    "watch": "npm-run-all --parallel watch-app watch-css",
+    "dev": "nodemon . & npm run scss",
+    "scss": "sass --watch public/scss:public/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.0",
+    "bootstrap": "^5.1.3",
+    "browser-sync": "^2.27.7",
+    "dotenv": "^10.0.0",
+    "emojis": "^1.0.10",
+    "express": "^4.17.1",
+    "gulp-sass": "^5.0.0",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.15",
+    "sass": "^1.44.0",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "node-sass": "^7.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.1"
+  }
+}
