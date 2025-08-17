@@ -1,10 +1,9 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+
 
 @font-face {
   font-family: "Coke";
   src: url("../fonts/brimborion.ttf");
   font-weight: bold;
-  font-style: bold;
 }
 
 a {
@@ -31,7 +30,6 @@ a {
 .tweet_text {
   color: white;
   font-size: 4.5em;
-  // font-weight: bold;
   padding-top: 100px;
   padding-bottom: 10px;
   padding-right: 100px;
@@ -178,6 +176,7 @@ a {
   margin: 10px;
   border-radius: 5px;
   display: flex;
+  align-items: center;
 }
 
 .description-container {
@@ -190,26 +189,26 @@ a {
   display: flex;
 }
 
-.user-photo img {
-  height: 70px;
-  padding: 0.2rem;
-  // position: relative;
-  // float: left;
-  // left: 20px;
-  // top: 5px;
-}
-
 .user-info {
-  // position: relative;
   color: white;
   text-shadow: 2px 2px 5px #000;
-  // float: left;
-  // left: 70px;
-  // bottom: -3px;
+  margin-left: 5px;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .user-description {
   font-size: 0.8rem;
   color: black;
   text-shadow: 2px 2px 5px #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.user-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 5px;
 }

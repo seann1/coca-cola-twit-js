@@ -10,7 +10,8 @@ const apikey = process.env.CONSUMER_KEY;
 const apiSecretKey = process.env.CONSUMER_SECRET;
 const accessToken = process.env.ACCESS_TOKEN;
 const accessTokenSecret = process.env.ACCESS_SECRET;
-
+// "express": "^4.17.1",
+// "twit": "^2.2.11"
 let T = new Twit({
   consumer_key: apikey,
   consumer_secret: apiSecretKey,
