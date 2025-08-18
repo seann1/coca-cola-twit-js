@@ -6,10 +6,10 @@
   "scripts": {
     "start": "serve public",
     "watch-app": "nodemon .",
-    "watch-css": "node-sass -w public/scss -o public/css",
+    "watch-css": "node-sass -w ./scss -o ./css",
     "watch": "npm-run-all --parallel watch-app watch-css",
     "dev": "nodemon . & npm run scss",
-    "scss": "sass --watch public/scss:public/css"
+    "scss": "sass --watch ./scss:./css"
   },
   "engines": {
     "node": "^14.15.5"
